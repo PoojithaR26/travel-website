@@ -31,7 +31,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
-                        TATA Metaverse 
+                        TCS Metaverse 
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -47,33 +47,21 @@ function Navbar() {
                                 SERVICES
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
-                                SERVICES
-                            </Link>
-                        </li>
+                        
                         <li className="nav-item">
                             <Link 
-                                to="/feedback" 
+                                to="/chatbot" 
                                 className="nav-links" 
                                 onClick={closeMobileMenu}
                             >
-                                FEEDBACK
+                                CHATBOT
                             </Link>
                         </li>
 
                         
-                        <li className="nav-item">
-                            <Link 
-                                to="/sign-in" 
-                                className="nav-links-mobile" 
-                                onClick={closeMobileMenu}
-                            >
-                                Sign In
-                            </Link>
-                        </li>
+                        
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
+                    
                 </div>
             </nav>
         </>
